@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>AR test</title>
+    <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
+    <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.6.0/aframe/build/aframe-ar.js"></script>
+  </head>
+  <body style='margin : 0px; overflow: hidden;'>
+
+  	<a-scene embedded arjs='sourceType: webcam;'>
+  		<!-- <a-box position='0 0.5 0' material='opacity: 0.5;'></a-box> -->
+      <a-entity scale=".1 .1 .1">
+        <a-entity gltf-model="https://arjs-cors-proxy.herokuapp.com/https://raw.githack.com/ryanhu22/arweb/arweb/assets/apartment/scene.gltf" scale="0.002 .002 .002">
+      </a-entity>
+      <!-- <a-assets>
+        <a-asset-items id="robot" src="https://cdn.aframe.io/examples/ar/models/triceratops/scene.gltf"></a-asset-items>
+      </a-assets> -->
+      <!-- <a-entity>
+        <a-entity src="https://cdn.aframe.io/examples/ar/models/triceratops/scene.gltf">
+      </a-entity> -->
+
+
+      <!-- <a-assets>
+        <a-asset-item id="duck" src="https://cdn.aframe.io/examples/ar/models/triceratops/scene.gltf"></a-asset-item>
+      </a-assets> -->
+<!--
+      <a-entity gltf-model="#duck" position="0 0 -5"></a-entity> -->
+
+
+
+
+      <!-- <a-entity gltf-model="#robot"></a-entity> -->
+      <a-marker-camera preset='hiro'></a-marker-camera>
+
+  	</a-scene>
+  </body>
+</html>
